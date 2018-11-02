@@ -4,13 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>515</title>
+    <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/mui.css" />
     <link rel="stylesheet" href="./fonts/mui.ttf" />
   </head>
   <body>
-	
+   
+     
+
+      <div class="wrap">
+        <div class="content">
+          <div class="head-h1">
+            <h1><span class="mui-icon mui-icon-bars menu-btn"></span>515</h1>
+          </div>
+          <div class="banner">
+            <div class="mui-slider">
+              <div class="mui-slider-group mui-slider-loop">
+                <!--支持循环，需要重复图片节点-->
+                <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="./images/4.png" /></a></div>
+                <div class="mui-slider-item"><a href="#"><img src="./images/1.png" /></a></div>
+                <div class="mui-slider-item"><a href="#"><img src="./images/2.png" /></a></div>
+                <div class="mui-slider-item"><a href="#"><img src="./images/3.jpg" /></a></div>
+                <div class="mui-slider-item"><a href="#"><img src="./images/4.png" /></a></div>
+                <!--支持循环，需要重复图片节点-->
+                <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="./images/1.png" /></a></div>
+              </div>
+              <div class="mui-slider-indicator">
+                <div class="mui-indicator mui-active"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+              </div>
+            </div>
+          </div>
+          <p class="footer">----------微斯咖技术----------</p>
+        </div>
+      </div>
+
+       <div class="menu" style="display: none;">
+          <div class="content">
+            <div class="head-h2">
+              <h2><span class="mui-icon mui-icon-closeempty menu-btn"></span>菜单</h2>
+            </div>
+            <div class="menu-content">
+              <ul>  
+                <li><a href="">Home</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">515 WORKSHOP</a></li>
+                <li><a href="">CATEGORY</a></li>
+                <li><a href="">MESSAGE BOARD</a></li>
+                <li><a href="">LINKS</a></li>
+                <li><a href="">WEIBO</a></li>
+              </ul>
+            </div>
+      </div>
+     </div>
+
   </body>
 </html>
 <script src="./js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="./js/mui.js" type="text/javascript" charset="utf-8"></script>
 
+ <script type="text/javascript">
+      //针对750的设计稿
+      document.documentElement.style.fontSize =document.documentElement.clientWidth / 7.5 + 'px';
+      $(window).resize(function() {
+          document.documentElement.style.fontSize =document.documentElement.clientWidth / 7.5 + 'px';
+      });
+
+      $(".menu-btn").click(function(){  
+        $(".menu").slideToggle(1500);
+        $(".wrap").fadeToggle(500);
+      });
+      
+      //获得slider插件对象
+      var gallery = mui('.mui-slider');
+      gallery.slider({
+        interval:5000//自动轮播周期，若为0则不自动播放，默认为0；
+      });
+
+      
+</script>

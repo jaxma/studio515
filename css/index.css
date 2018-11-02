@@ -1,0 +1,79 @@
+ul,li{
+	list-style: none;
+	padding:0;
+}
+
+.wrap,.menu{
+	width: 100%;
+	height: 13rem;
+	padding: 13% 5%;
+}
+
+.content{
+	width: 100%;
+	height: 100%;
+}
+.head-h1{
+	width: 100%;
+}
+.head-h1 h1{
+	width: 100%;
+	height: 1rem;
+	font-size: .8rem;
+	line-height: 1rem;
+	text-align: center;
+	padding-right:7%; 
+	color:#0xE73610;
+}
+.head-h1 h1 span{
+	float: left;
+	line-height: 1rem;
+	font-size: .8rem;
+	color:#000;
+}
+
+.banner{
+	width: 100%;
+	height: auto;
+	margin:10% 0; 
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.banner img{
+	height: 8rem;
+}
+.footer{
+	text-align: center;
+}
+
+.head-h2 h2{
+	width: 100%;
+	height: 1rem;
+	font-size: .5rem;
+	line-height: 1rem;
+	text-align: center;
+	padding-right:14%; 
+
+}
+.head-h2 h2 span{
+	float: left;
+	line-height: 1rem;
+	font-size: 1rem;
+}
+.menu-content{
+	width: 100%;
+	height: 8rem;
+}
+.menu-content ul{
+	width: 100%;
+	height: 10rem;
+}
+.menu-content ul li{
+	width: 100%;
+	height: .8rem;
+	line-height: .8rem;
+	text-align: center;
+}
+.menu-content ul li a{
+	color:#000;
+}
+
